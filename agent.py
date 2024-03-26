@@ -4,7 +4,7 @@ class QLearningAgent:
         self.n_actions = n_actions
         self.q_table = np.zeros((32, 11, 2, n_actions))  # State space: player sum, dealer's card, usable ace, action
         self.epsilon = 0.1  # Exploration rate
-        self.alpha = 0.3    # Learning rate
+        self.alpha = 0.5    # Learning rate
         self.gamma = 1.0    # Discount factor
 
     def choose_action(self, player_sum, dealer_card, usable_ace):
